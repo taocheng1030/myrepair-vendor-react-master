@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Muli|Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+
+$old_red: #fd1b11;
+$new_red: #c75246;
+
+@font-face {
+    font-family: 'bariolregular';
+    src: url('../fonts/bariol_regular-webfont.eot');
+    src: url('../fonts/bariol_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bariol_regular-webfont.woff2') format('woff2'),
+         url('../fonts/bariol_regular-webfont.woff') format('woff'),
+         url('../fonts/bariol_regular-webfont.ttf') format('truetype'),
+         url('../fonts/bariol_regular-webfont.svg#bariolregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.header_site {
+    background: transparent;
+    border: 0;
+    margin-bottom: 0;
+    padding: 8px;
+    z-index: 5;
+}
+
+.header_page {
+    background: #fff;
+    border: 0;
+    margin-bottom: 0;
+    padding: 8px;
+    z-index: 1000;
+    //box-shadow: 0px 0px 3px #bdbdbd;
+}
+
+.navbar-nav > li > a{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-nav > li > a > div > a{
+    padding-top:13px;
+    padding-bottom: 13px;
+    line-height: 34px;
+}
+
+.header_active {
+    background: #fff;
+    box-shadow: 0px 0px 14px #bfbfbf;
+    transition:0.4s top cubic-bezier(.3, .73, .3, .74);
+}
+
+.header_active .item_c a{
+    color: #000 !important;
+}
+
+.header_site,.header_page .navbar-nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+.header_site .navbar-nav > li > a:hover{
+    color: #fff !important;
+}
+
+.header_page .navbar-nav > li > a {
+    color: #000
+}
+
+.header_page .navbar-nav > li > a:hover {
+    color: #000 !important
+}
+
+.register_btn a {
+    background: $new_red;
+    color: #fff !important;
+    padding: 10px 15px !important;
+    position: absolute;
+    top: 8px;
+    margin-left: 7px;
+}
+
+.register_btn a:hover{
+    background: $new_red!important
+}
+
+.header_search a {
+    padding: 10px 10px !important;
+}
+
+.header_site .navbar-nav > li > a:hover {
+    color: #000;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+
+.navbar-brand{
+    padding: 17px 0;
+}
+
+.logo_site img {
+    position: relative;
+    top: -7px;
+}
+
+.background-gradient {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom, #000000, transparent, transparent, transparent, transparent);
+}
+
+.title_home{
+    font-family: 'Muli', sans-serif;
+    color: #fff;
+}
+
+/* Navigation Search */
+
+.slide {
+    //background: url(../img/new_slide.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 870px;
+    margin-top: -62px
+}
+
+.text_home {
+    margin: 300px 0 0;
+    width: 50%;
+    text-align: left;
+    font-size: 16px;
+}
+
+.text_home p {
+    font-family: 'bariolregular';
+    margin: 27px 0;
+    color: #fff;
+}
+
+.navigation_search h2 {
+    font-family: 'Montserrat';
+}
+
+/* Home Results */
+
+.home_results{
+    padding: 40px 0 0;
+    text-align: center
+}
+
+.home_results h2 {
+    font-family: 'Montserrat';
+}
+
+._grids_business {
+    margin: 60px 0 0;
+}
+
+._business_data {
+    text-align: left;
+}
+
+.restaurant_name {
+    padding: 8px 0 0;
+    font-size: 16px;
+}
+
+.restaurant_filter {
+    font-size: 14px;
+    color: #989898;
+}
+
+.restaurant_time {
+    font-size: 12px;
+    padding: 5px 0;
+    display: block;
+    color: #000;
+}
+
+
+/* ========= How It Works */
+
+.cont_works {
+    padding: 60px;
+}
+
+.title_reference {
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.how_works {
+    background: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.how_works h2 {
+    color: #000;
+    margin: 60px 0 0;
+    font-family: 'Montserrat';
+}
+
+.title_reference span {
+    display: block;
+    margin: 11px 0 0;
+    font-size: 19px;
+    font-family: 'bariolregular';
+    color: #a09c9c;
+}
+
+.liners_bottom {
+    background: $new_red;
+    width: 80px;
+    height: 5px;
+    margin: 24px auto;
+    display: block;
+}
+
+
+/* ========== Download Page ============ */
+
+.download_app {
+    padding: 60px 0 0;
+}
+
+.download_app img {
+    max-width: 100%;
+}
+
+.download_box {
+    margin: 70px 0 0;
+    width: 40%;
+    font-family: 'bariolregular';
+    font-size: 16px
+}
+
+.blockes{
+    display: block
+}
+
+.download_box h3 {
+    color: #000;
+    font-family: 'Montserrat';
+    line-height: 30px
+}
+
+.dowload_links {
+    margin: 30px 0;
+}
+
+.dowload_links a {
+    display: inline-block;
+    width: 36%;
+    margin: 0 10px;
+}
+
+/* ========== Profile Pic ============== */
+
+.profile_pic img{
+    max-width: 100%
+}
+
+/* ======================== */
+
+.form_register {
+    width: 70%;
+    margin: 0 auto;
+}
+
+._btn_regiters{
+    background: #da3a36;
+    color: #fff;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+._btn_regiters:hover{
+    color: #fff;
+}
+
+.welcome_register{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+
+#registerForm{
+    margin-top: 20px
+}
+
+.register_restaurants {
+    margin: 55px 0 0;
+}
+
+.business_register {
+    width: 80%;
+    border: 1px #ececec solid;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px #e4e0e0;
+}
+
+/* Footer */
+
+.footer {
+    background: #111;
+    padding: 30px;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.first_footer {
+    padding: 15px 0;
+}
+
+.first_footer ul {
+    padding: 0;
+}
+
+.first_footer ul li {
+    list-style: none;
+    margin: 16px 0;
+}
+
+.second_footer {
+    border-top: 1px #333 solid;
+    padding: 15px 0;
+}
+
+.stores_footer {
+    position: relative;
+    top: 14px;
+}
+
+.stores_footer img {
+    width: 33%;
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+.footer_terms {
+    float: right;
+    position: relative;
+    top: 10px;
+}
+
+.footer_terms {
+    float: right;
+    position: relative;
+    top: 10px;
+}
+
+.social_footer {
+    position: relative;
+    top: 30px;
+    left: 7px;
+}
+
+.social_footer a {
+    margin: 0 10px;
+}
+
+
+.rename {
+    color: #000;
+    position: relative;
+    top: -6px;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: bold;
+    left: -3px;
+    text-transform: uppercase;
+}
+
+.help_page {
+    margin: 72px 0 0;
+    background: black;
+    color: #fff;
+}
+
+.help_content {
+    padding: 75px 0;
+    background: #fafafa;
+    margin: 80px 0 0 0;
+}
+
+.help_page h3 {
+    padding: 20px 0;
+    margin: 0 19px;
+    /* text-align: center; */
+}
+
+.item_help {
+    text-align: center;
+    background: #fafafa;
+}
+
+.item_help img {
+    width: 38%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.item_help h3 {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px #dcdbdb solid;
+}
+
+/* Terms Page */
+
+.terms_content {
+    margin: 105px 0 15px;
+}
+
+.terms_content h3, h4 {
+    font-family: 'Montserrat';
+    color: #000;
+}
+
+.terms_block {
+    margin: 40px 0;
+}
+
+.terms_block p strong {
+    color: #000;
+    margin: 30px 0 16px;
+    display: block;
+}
+
+.terms_block p span {
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .text_home {
+        width: 52%;
+    }
+
+    .title_reference {
+        width: auto;
+    }
+}
+
+
+@media screen and (min-width:320px) and (max-width: 767px) {
+
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+
+    .header_page .navbar-toggle .icon-bar {
+        background-color: #000;
+    }
+
+    .header_active .navbar-toggle .icon-bar {
+        background-color: #000 !important;
+    }
+
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        border-color: transparent;
+    }
+
+    .text_home {
+        position: relative;
+        width: auto;
+        padding: 0;
+        margin: 280px 0;
+    }
+
+    .slide {
+        height: 630px;
+    }
+
+    /* How Works */
+
+    .title_reference {
+        width: auto;
+    }
+
+    .how_works h2 {
+        font-size: 26px;
+        margin-bottom: 18px;
+    }
+
+    /* Download Box */
+
+    .download_box {
+        margin: 0 auto;
+        width: auto;
+        background: white;
+        border-top: 5px #000 solid;
+        padding: 13px;
+    }
+
+    .download_box h3 {
+        font-size: 21px;
+    }
+
+    /* Footer */
+
+    .footer {
+        padding: 30px 0;
+    }
+
+    .social_footer {
+        top: 15px;
+        float: right;
+    }
+
+    .footer_first_line,.footer_second_line {
+        padding: 18px 30px 0;
+    }
+
+    .terms_content {
+        text-align: justify;
+    }
+
+    .footer_terms {
+        float: left;
+        display: block;
+        margin: 40px 0 0;
+    }
+    .navbar-nav > li > a > div > a{
+        padding-top:7px;
+        padding-bottom: 7px;
+    }
+}
